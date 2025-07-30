@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentación Técnica de JavaScript</title>
+    <link rel="stylesheet" href="pagina_principal.css">
+    <link rel="shortcut icon" href="java.png" type="image/x-icon">
+    
+</head>
+<body>
+    <nav id="navbar">
+        <header>Documentación JS</header>
+        <a href="#Introducción_a_JavaScript" class="nav-link">Introducción a JavaScript</a>
+        <a href="#Variables_y_constantes" class="nav-link">Variables y constantes</a>
+        <a href="#Estructuras_de_control" class="nav-link">Estructuras de control</a>
+        <a href="#Funciones" class="nav-link">Funciones</a>
+        <a href="#Objetos_y_arrays" class="nav-link">Objetos y arrays</a>
+    </nav>
+
+    <main id="main-doc">
+        <section class="main-section" id="Introducción_a_JavaScript">
+            <header>Introducción a JavaScript</header>
+            <p>JavaScript es un lenguaje de programación interpretado, dialecto del estándar ECMAScript.</p>
+            <p>Se define como orientado a objetos, basado en prototipos, imperativo, débilmente tipado y dinámico.</p>
+            <p>Algunas características clave de JavaScript incluyen:</p>
+            <ul>
+                <li>Lenguaje del lado del cliente</li>
+                <li>Interpretado (no necesita compilación)</li>
+                <li>Multiplataforma</li>
+            </ul>
+            <code>console.log("Hola Mundo");</code>
+            <p>JavaScript se ejecuta en el navegador web y puede manipular el DOM para crear páginas interactivas.</p>
+        </section>
+
+        <section class="main-section" id="Variables_y_constantes">
+            <header>Variables y constantes</header>
+            <p>En JavaScript existen tres formas de declarar variables:</p>
+            <ul>
+                <li><code>var</code> - Alcance de función</li>
+                <li><code>let</code> - Alcance de bloque</li>
+                <li><code>const</code> - Alcance de bloque y valor constante</li>
+            </ul>
+            <p>Ejemplos de declaración:</p>
+            <code>var nombre = "Juan";</code>
+            <code>let edad = 30;</code>
+            <code>const PI = 3.1416;</code>
+            <p>Las variables declaradas con <code>const</code> no pueden ser reasignadas, aunque sus propiedades pueden modificarse si es un objeto.</p>
+        </section>
+
+        <section class="main-section" id="Estructuras_de_control">
+            <header>Estructuras de control</header>
+            <p>JavaScript incluye las estructuras de control típicas de los lenguajes de programación:</p>
+            <code>if (condición) { /* código */ } else { /* código */ }</code>
+            <p>Estructuras de repetición:</p>
+            <code>for (let i = 0; i < 10; i++) { /* código */ }</code>
+            <code>while (condición) { /* código */ }</code>
+            <p>También existe el switch para múltiples condiciones:</p>
+            <code>
+                switch(expresión) {
+                    case valor1:
+                        // código
+                        break;
+                    default:
+                        // código
+                }
+            </code>
+            <p>Las estructuras de control permiten controlar el flujo de ejecución del programa.</p>
+        </section>
+
+        <section class="main-section" id="Funciones">
+            <header>Funciones</header>
+            <p>Las funciones son bloques de código reutilizables que realizan una tarea específica.</p>
+            <p>Pueden declararse de varias formas:</p>
+            <code>function saludar() { return "Hola"; }</code>
+            <code>const saludar = function() { return "Hola"; }</code>
+            <code>const saludar = () => "Hola"; // Arrow function</code>
+            <p>Las funciones pueden recibir parámetros y retornar valores:</p>
+            <code>function suma(a, b) { return a + b; }</code>
+            <p>En ES6 se añadieron parámetros por defecto:</p>
+            <code>function multiplicar(a, b = 1) { return a * b; }</code>
+        </section>
+
+        <section class="main-section" id="Objetos_y_arrays">
+            <header>Objetos y arrays</header>
+            <p>Los objetos son colecciones de propiedades clave-valor:</p>
+            <code>
+                const persona = {
+                    nombre: "Ana",
+                    edad: 25,
+                    saludar: function() { console.log("Hola"); }
+                };
+            </code>
+            <p>Los arrays son listas ordenadas de valores:</p>
+            <code>const colores = ["rojo", "verde", "azul"];</code>
+            <p>Métodos comunes de arrays:</p>
+            <ul>
+                <li><code>push()</code> - Añade elemento al final</li>
+                <li><code>pop()</code> - Elimina último elemento</li>
+                <li><code>map()</code> - Transforma cada elemento</li>
+            </ul>
+            <p>Los objetos y arrays son estructuras fundamentales en JavaScript.</p>
+        </section>
+    </main>
+</body>
+</html>
